@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="index.html"><strong>Photography</strong> by Omkar Jadhav</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#footer" class="icon fa-info-circle">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+        {% for image in site.static_files %}
+            {% if image.path contains 'fulls' %}
+                <article class="thumb">
+                    <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
+                    <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt="" data-name="{{ image.name }}"/></a>
+                    <!--<h2></h2>
+                    <p></p>-->
+                </article>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="panel">
+        <div class="inner split">
+            <div>
+                <section>
+                <img src="{{site.baseurl}}/images/profile.png" height="400px" width="400px">
+                </section>
+                
+
+            </div>
+            <div>
+
+
+                <section>
+                <br><br><br><br><br>
+                <h2>Hey there, my name is Omkar</h2>
+                   <h4>I am an engineer and a voracious photographer.<br> I turn every trivial moment into a masterpiece .</h4>
+                </section>
+                <section>
+                    <h2>Follow me on ...</h2>
+                    <ul class="icons">
+                        <li><a href="{{ site.social_urls.facebook }}" class="icon fa-facebook"><span
+                                class="label">Facebook</span></a>
+
+                        <li><a href="{{ site.social_urls.instagram }}" class="icon fa-instagram"><span
+                                class="label">Instagram</span></a>
+
+                    </ul>
+                </section>
+
+
+            </div>
+        </div>
+    </footer>
+</div>

@@ -1,0 +1,16 @@
+# Base configs
+baseurl: ""
+image_fulls_loc: "/images/fulls"
+image_thumbs_loc: "/images/thumbs"
+google_analytics: "UA-46465113-2"
+
+# UI configs
+title: "Photography by Omkar Jadhav"
+subtitle: "See the world through my eyes!"
+author: "Omkar Jadhav"
+bio: "I am an engineer and a voracious photographer. I make every trivial moment into a masterpiece."
+social_urls:
+  facebook: "https://www.facebook.com/omkar.click"
+  instagram: "https://www.instagram.com/omkar_ll"
+
+  
